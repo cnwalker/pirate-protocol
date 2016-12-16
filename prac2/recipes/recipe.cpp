@@ -57,7 +57,7 @@ void scale_recipe(int recipe_num) {
 		}
 	}
 
-	cout << "Recipe # " << recipe_num << endl; 
+	cout << "Recipe # " << recipe_num << endl;
 
 	for(int i = 0; i < num_ingredients; i++) {
 		cout << fixed << setprecision(1) << ingredients[i] << " " <<  scaled_weight * (ingredient_info[i].percentage/100) << endl;

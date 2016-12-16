@@ -27,6 +27,21 @@ double compute_class_score(string economic_class){
 	return score;
 }
 
+/* vector<string> split(string input, char delimeter) {
+    vector<int> cur_range;
+    vector<string> splitted
+    for(int i = 0; i < input.length(); i++) {
+        if(input[i] == delimeter) {
+            if (cur_range.size() == 2) {
+                cur_range[0] = cur_range[1];
+                cur_range[1] = i;
+            } else {
+                cur_range.push_back(i);
+            }
+        }
+    }
+} */
+
 void binary_insert(Person in_person, vector<Person> &people_list) {
     int people_list_len = people_list.size();
 
@@ -131,4 +146,10 @@ int main() {
         }
         cout << "==============================" << endl;
     }
+
+    vector<string> result = split("When, I, grow, up, I, will, be, a, terrorist", ',');
+    for(int i = 0; i < result.size(); i++) {
+        cout << result[i] << ", ";
+    }
+    cout << endl;
 }
